@@ -9,4 +9,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  email: string = 'khledshihab221@gmail.com';
+  phone: string = '+8801990637762';
+}

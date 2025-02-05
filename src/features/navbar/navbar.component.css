@@ -1,0 +1,31 @@
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #9fcaa2; /* Background color for better contrast */
+  color: white; /* White text */
+  font-size: 14px;
+  line-height: 1;
+  display: flex; /* Added flex to align items */
+  align-items: center; /* Centering content */
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-size: 1rem;
+
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+/* Keyframe animation to make the text move */
+@keyframes marquee {
+  from {
+    transform: translateX(1500%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
